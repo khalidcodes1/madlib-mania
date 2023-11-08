@@ -65,8 +65,8 @@ def madlib():
         {color2} {animal2} while hiking, I am going to bring it home as a pet!  At night we will tell {number2}{silly_word} 
         stories and roast {noun2} around the fire'''
 
-madlib()
-print(first_madlib)    
+
+  
 
 
 def madlib_2():

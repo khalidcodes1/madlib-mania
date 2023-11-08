@@ -54,6 +54,8 @@ def main():
         else:
             menu_index = main_menu.show()    
 
+main()            
+
 
 
     
