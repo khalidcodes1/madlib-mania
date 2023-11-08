@@ -42,17 +42,18 @@ def main():
             sub_options_choice = sub_options[suboptions_index]
             ready_message = f'Get ready to type'
             end_message = f'You have reached the end of the story'
+            if sub_options_choice == '1.Story 1':
+                print(ready_message)
+                madlib()
+                print(end_message)
+            elif sub_options_choice == '2.Story 2':
+                print(ready_message) 
+                madlib_2()
+                print(end_message)
+            else:
+                menu_index = main_menu.show()    
 
-        if sub_options_choice == '1.Story 1':
-            print(ready_message)
-            madlib()
-            print(end_message)
-        elif sub_options_choice == '2.Story 2':
-            print(ready_message) 
-            madlib_2()
-            print(end_message)
-        else:
-            menu_index = main_menu.show()    
+        
 
 main()            
 
