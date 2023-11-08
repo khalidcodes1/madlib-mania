@@ -77,19 +77,19 @@ def madlib_2():
     transportation_mode = ""
     adjective1 = ""
     adjective2 = ""
-    noun = ""
+    noun1 = ""
     color = ""
     part_of_body = ""
     verb = ""
-    number = ""
+    number2 = ""
     noun2 = ""
     noun3 = ""
     part_of_body2 = ""
     verb2 = ""
-    noun3 = ""
+    noun4 = ""
     adjective3 = ""
     silly_word = ""
-    noun4 = ""
+    noun5 = ""
 
     # Checking user input
     while len(number) < 2:
@@ -102,14 +102,41 @@ def madlib_2():
         adjective1 = input('Type an adjective: ').strip()      
     while len(adjective2) < 2:
         adjective2 = input('Type an adjective: ').strip()  
-    while len(noun) < 2:
-        noun = input('Type a noun: ').strip()
+    while len(noun1) < 2:
+        noun1 = input('Type a noun: ').strip()
     while len(color) < 2:
         color = input('Type a color: ').strip()   
     while len(part_of_body) < 2:
         part_of_body = input('Type a body part: ').strip()     
     while len(verb) < 2:
-        verb = input('Type an verb: ').strip()   
+        verb = input('Type an verb: ').strip()
+    while len(number2) < 2:
+        number2 = input('Type a number: ').strip()
+    while len(noun2) < 2:
+        noun2 = input('Type a noun: ').strip()
+    while len(noun3) < 2:
+        noun3 = input('Type a noun: ').strip()
+    while len(part_of_body2) < 2:
+        part_of_body2 = input('Type a body part: ').strip()
+    while len(verb2) < 2:
+        verb2 = input('Type a verb: ').strip() 
+    while len(noun4) < 2:
+        noun4 = input('Type a noun: ').strip()  
+    while len(adjective3) < 2:
+        adjective3 = input('Type an adjective: ').strip()     
+    while len(silly_word) < 2:
+        silly_word = input('Type a silly_word: ').strip()
+    while len(noun5) < 2:
+        noun5 = input('Type a noun4: ').strip()    
+
+    second_madlib = f'''It was about {number} {measure_of_time} ago when I came to the hospital in a {transportation_mode}. The hospital is a {adjective1}
+    place, there are a lot of {adjective2} {noun1} here. There are nurses here who have {color} {part_of_body}. If someone wants to come
+    into my room I told them that they have to {verb} first.I have decorated my room with {number2} {noun2}. Today a 
+    doctor came into my room and they were wearing a {noun3} on their {part_of_body2}. I heard that all doctors {verb2} {noun4} 
+    everyday for breakfast. The most {adjective3} thing about being in the hospital is the {silly_word} {noun5}.'
+
+   
+
 
 
 
