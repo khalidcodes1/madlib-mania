@@ -133,7 +133,7 @@ def madlib_2():
     place, there are a lot of {adjective2} {noun1} here. There are nurses here who have {color} {part_of_body}. If someone wants to come
     into my room I told them that they have to {verb} first.I have decorated my room with {number2} {noun2}. Today a 
     doctor came into my room and they were wearing a {noun3} on their {part_of_body2}. I heard that all doctors {verb2} {noun4} 
-    everyday for breakfast. The most {adjective3} thing about being in the hospital is the {silly_word} {noun5}.'
+    everyday for breakfast. The most {adjective3} thing about being in the hospital is the {silly_word} {noun5}.'''
 
    
 

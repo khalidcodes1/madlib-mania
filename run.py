@@ -1,4 +1,5 @@
 from simple_term_menu import TerminalMenu
+from madlibs import *
 
 
 def show_the_rules():
