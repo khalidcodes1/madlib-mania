@@ -68,9 +68,10 @@ def get_validated_input(maxStringLength, minStringLength, inputPrompt):
         user_input = input(inputPrompt).strip()
 
         if not (minStringLength < len(user_input) < maxStringLength):
-            print("Input length must be more than" + 
-                 minStringLength + "and less than" + maxStringLength + "characters")
-            continue
+           print(f"Input length must be more than {minStringLength} and less than {maxStringLength} characters")
+
+
+        continue
         if not all(char.isalnum() for char in user_input):
             print("Input should not contain special characters.")
             continue
