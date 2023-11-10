@@ -58,16 +58,17 @@ def madlib():
         object2 = input('Type a noun: ').strip()      
 
                   
-    first_madlib = f'''This weekend I am going camping with {name}.I packed my lantern, sleeping bag, and {object}.
-        I am so {descriptive_word} to {verb} in a tent. I am {descriptive_word2} we might see a {animal}, they are kind of 
-        dangerous. We are going to hike, fish, and {verb2}. I have heard that the {color} lake is great for
-        {verb3}. Then we will {adverb} hike through the forest for {number} {measure_of_time}. If I see a 
-        {color2} {animal2} while hiking, I am going to bring it home as a pet!  At night we will tell {number2}{silly_word} 
-        stories and roast {object2} around the fire'''
-
-
-  
-
+    first_madlib = f'''
+    This weekend I am going camping with {name}.
+    I packed my lantern, sleeping bag, and {object}.
+    I am so {descriptive_word} to {verb} in a tent. 
+    I am {descriptive_word2} we might see a {animal}, they are kind of 
+    dangerous. We are going to hike, fish, and {verb2}. 
+    I have heard that the {color} lake is great for
+    {verb3}. Then we will {adverb} hike through the forest for {number} 
+    {measure_of_time}. If I see a {color2} {animal2} while hiking,
+    I am going to bring it home as a pet!  At night we will tell 
+    {number2}{silly_word}stories and roast {object2} around the fire'''
 
 def madlib_2():
     """ Asks the user for input, validates the input and returns the string"""
@@ -179,9 +180,9 @@ def madlib_3():
     while len(occupation1) < 2:
         occupation1 = input('Type an occupation: ').strip()
     while len(name3) < 2:
-        name3 = input('Type a body part: ').strip()
+        name3 = input('Type a name: ').strip()
 
-        
+
     third_madlib = f'''
     My name is {name} and I am {number} years old.
     If I were president, I'd do a whole bunch {descriptive_word4}
