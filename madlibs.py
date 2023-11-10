@@ -152,8 +152,36 @@ def madlib_3():
     name2 = ""
     occupation1 = ""
     name3 = ""
-    
 
+    # Checking user input
+    while len(name) < 2:
+        name = input('Type a name: ').strip()
+    while len(number) < 2:
+        number = input('Type a number: ').strip()    
+    while len(descriptive_word4) < 2:
+        descriptive_word4 = input('Type an adjective : ').strip()  
+    while len(color3) < 2:
+        color3 = input('Type a color: ').strip()      
+    while len(object6) < 2:
+        object6 = input('Type a noun: ').strip()  
+    while len(food_type) < 2:
+        food_type = input('Type a type of food: ').strip()
+    while len(clothing_article) < 2:
+        clothing_article = input('Type a type of clothe: ').strip()   
+    while len(descriptive_word5) < 2:
+        descriptive_word5 = input('Type an adjective: ').strip()     
+    while len(celebrity) < 2:
+        celebrity = input('Type a celebrity: ').strip()
+    while len(number2) < 2:
+        number2 = input('Type a number: ').strip()
+    while len(name2) < 2:
+        name2 = input('Type a name: ').strip()
+    while len(occupation1) < 2:
+        occupation1 = input('Type an occupation: ').strip()
+    while len(name3) < 2:
+        name3 = input('Type a body part: ').strip()
+
+        
     third_madlib = f'''
     My name is {name} and I am {number} years old.
     If I were president, I'd do a whole bunch {descriptive_word4}
