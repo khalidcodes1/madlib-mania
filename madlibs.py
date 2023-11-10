@@ -22,38 +22,24 @@ def madlib():
     object2 = ""
 
     # Checking user input
-    while len(name) < 2:
-        name = input('Type a name: ').strip()
-    while len(object1) < 2:
-        object1 = input('Type a noun: ').strip()   
-    while len(descriptive_word) < 2:
-        descriptive_word = input('Type an adjective (feeling) : ').strip() 
-    while len(verb) < 2:
-        verb = input('Type a verb: ').strip()        
-    while len(descriptive_word2) < 2:
-        descriptive_word2 = input('Type an adjective (feeling): ').strip()
-    while len(animal) < 2:
-        animal = input('Type an animal: ').strip()     
-    while len(verb2) < 2:
-        verb2 = input('Type a verb: ').strip()
-    while len(color) < 2:
-        color = input('Type a color: ').strip()        
-    while len(verb3) < 2:
-        verb3 = input('Type a verb: ').strip()       
-    while len(adverb) < 2:
-        adverb = input('Type an adverb(ending in ly): ').strip() 
+    name = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a name:')
+    object1 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a noun:')
+    descriptive_word = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a noun:')
+    verb = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a verb:')
+    descriptive_word2 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a noun:')
+    animal = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter an animal:')    
+    verb2 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a verb:')
+    color = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a color:')     
+    verb3 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a verb:')     
+    adverb = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a verb:')
     number = ValidateNumber()
-    while len(measure_of_time) < 2:
-        measure_of_time = input('Type a measure of time: ').strip()  
-    while len(color2) < 2:
-        color2 = input('Type a color: ').strip()  
-    while len(animal2) < 2:
-        animal2 = input('Type an animal: ').strip()
+    measure_of_time = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a measure of time:') 
+    color2 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a color:')  
+    animal2 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter an animal:')
     number2 = ValidateNumber()
-    while len(silly_word) < 2:
-        silly_word = input('Type a silly word: ').strip()      
-    while len(object2) < 2:
-        object2 = input('Type a noun: ').strip()      
+    silly_word = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a silly word:')     
+    object2 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a noun:')
+ 
 
                   
     first_madlib = f'''
@@ -75,7 +61,21 @@ def ValidateNumber():
             number = int(user_input)
             break
         except ValueError:
-            print("Thats's not a valid number. Please try again.") 
+            print("Thats's not a valid number. Please try again.")
+
+def get_validated_input(maxStringLength, minStringLength, inputPrompt):
+    while True:
+        user_input = input(inputPrompt).strip()
+
+        if not (minStringLength < len(user_input) < maxStringLength):
+            print("Input length must be more than" + 
+                 minStringLength + "and less than" + maxStringLength + "characters")
+            continue
+        if not all(char.isalnum() for char in user_input):
+            print("Input should not contain special characters.")
+            continue
+
+        return user_input.lower()           
 def madlib_2():
     """ Asks the user for input, validates the input and returns the string"""
     # User input variables
@@ -99,42 +99,25 @@ def madlib_2():
     object5 = ""
 
     # Checking user input
-    while len(number) < 2:
-        number = input('Type a number: ').strip()
-    while len(measure_of_time) < 2:
-        measure_of_time = input('Type a measure of time: ').strip()    
-    while len(transportation_mode) < 2:
-        transportation_mode = input('Type a mode of transport: ').strip()  
-    while len(descriptive_word) < 2:
-        descriptive_word = input('Type an adjective: ').strip()      
-    while len(descriptive_word2) < 2:
-        descriptive_word2 = input('Type an adjective: ').strip()  
-    while len(object1) < 2:
-        object1 = input('Type a noun: ').strip()
-    while len(color) < 2:
-        color = input('Type a color: ').strip()   
-    while len(part_of_body) < 2:
-        part_of_body = input('Type a body part: ').strip()     
-    while len(verb) < 2:
-        verb = input('Type an verb: ').strip()
-    while len(number2) < 2:
-        number2 = input('Type a number: ').strip()
-    while len(object2) < 2:
-        object2 = input('Type a noun: ').strip()
-    while len(object3) < 2:
-        object3 = input('Type a noun: ').strip()
-    while len(part_of_body2) < 2:
-        part_of_body2 = input('Type a body part: ').strip()
-    while len(verb2) < 2:
-        verb2 = input('Type a verb: ').strip() 
-    while len(object4) < 2:
-        object4 = input('Type a noun: ').strip()  
-    while len(descriptive_word3) < 2:
-        descriptive_word3 = input('Type an adjective: ').strip()     
-    while len(silly_word) < 2:
-        silly_word = input('Type a silly_word: ').strip()
-    while len(object5) < 2:
-        object5 = input('Type a noun: ').strip()    
+    number = ValidateNumber()
+    measure_of_time = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a measure of time:')   
+    transportation_mode = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a mode of transport:') 
+    descriptive_word = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter an adjective:')       
+    descriptive_word2 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter an adjective:')  
+    object1 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a noun:')
+    color = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a color:')  
+    part_of_body = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a body part:')     
+    verb = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a verb:')
+    number2 = ValidateNumber()
+    object2 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a noun:')    
+    object3 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a noun:')    
+    part_of_body2 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a body part:')
+    verb2 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a verb:')
+    object4 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a noun:')    
+    descriptive_word3 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter an adjective:')     
+    silly_word = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a silly word:')
+    object5 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a noun:')
+ 
 
     second_madlib = f'''It was about {number} {measure_of_time} ago when I came to the hospital in a {transportation_mode}. The hospital is a {descriptive_word}
     place, there are a lot of {descriptive_word2} {object1} here. There are nurses here who have {color} {part_of_body}. If someone wants to come
@@ -161,32 +144,20 @@ def madlib_3():
     name3 = ""
 
     # Checking user input
-    while len(name) < 2:
-        name = input('Type a name: ').strip()
-    while len(number) < 2:
-        number = input('Type a number: ').strip()    
-    while len(descriptive_word4) < 2:
-        descriptive_word4 = input('Type an adjective : ').strip()  
-    while len(color3) < 2:
-        color3 = input('Type a color: ').strip()      
-    while len(object6) < 2:
-        object6 = input('Type a noun: ').strip()  
-    while len(food_type) < 2:
-        food_type = input('Type a type of food: ').strip()
-    while len(clothing_article) < 2:
-        clothing_article = input('Type a type of clothe: ').strip()   
-    while len(descriptive_word5) < 2:
-        descriptive_word5 = input('Type an adjective: ').strip()     
-    while len(celebrity) < 2:
-        celebrity = input('Type a celebrity: ').strip()
-    while len(number2) < 2:
-        number2 = input('Type a number: ').strip()
-    while len(name2) < 2:
-        name2 = input('Type a name: ').strip()
-    while len(occupation1) < 2:
-        occupation1 = input('Type an occupation: ').strip()
-    while len(name3) < 2:
-        name3 = input('Type a name: ').strip()
+    name = get_validated_input(maxStringLength=12, minStringLength=2, inputPrompt='Please enter a name:')
+    number = ValidateNumber()  
+    descriptive_word4 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter an adjective:')  
+    color3 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a color:')        
+    object6 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a noun:')  
+    food_type = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a food:')
+    clothing_article = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a clothing article:')   
+    descriptive_word5 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter an adjective:')     
+    celebrity = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a celebrity:')
+    number2 = ValidateNumber()
+    name2 = get_validated_input(maxStringLength=12, minStringLength=2, inputPrompt='Please enter a name:')
+    occupation1 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter an occupation:')
+    name3 = get_validated_input(maxStringLength=12, minStringLength=2, inputPrompt='Please enter a name:')
+
 
 
     third_madlib = f'''
