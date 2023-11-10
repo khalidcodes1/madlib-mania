@@ -42,16 +42,14 @@ def madlib():
         verb3 = input('Type a verb: ').strip()       
     while len(adverb) < 2:
         adverb = input('Type an adverb(ending in ly): ').strip() 
-    while len(number) < 2:
-        number = input('Type a number: ').strip()
+    number = ValidateNumber()
     while len(measure_of_time) < 2:
         measure_of_time = input('Type a measure of time: ').strip()  
     while len(color2) < 2:
         color2 = input('Type a color: ').strip()  
     while len(animal2) < 2:
         animal2 = input('Type an animal: ').strip()
-    while len(number2) < 2:
-        number2 = input('Type a number: ').strip()
+    number2 = ValidateNumber()
     while len(silly_word) < 2:
         silly_word = input('Type a silly word: ').strip()      
     while len(object2) < 2:
@@ -70,6 +68,14 @@ def madlib():
     I am going to bring it home as a pet!  At night we will tell 
     {number2}{silly_word}stories and roast {object2} around the fire'''
 
+def ValidateNumber():
+    while True:
+        user_input = input('Type a number:')
+        try:
+            number = int(user_input)
+            break
+        except ValueError:
+            print("Thats's not a valid number. Please try again.") 
 def madlib_2():
     """ Asks the user for input, validates the input and returns the string"""
     # User input variables
