@@ -43,7 +43,7 @@ def madlib():
     while len(adverb) < 2:
         adverb = input('Type an adverb(ending in ly): ').strip() 
     while len(number) < 2:
-        number = int(input('Type a number: ').strip())
+        number = input('Type a number: ').strip()
     while len(measure_of_time) < 2:
         measure_of_time = input('Type a measure of time: ').strip()  
     while len(color2) < 2:
@@ -51,7 +51,7 @@ def madlib():
     while len(animal2) < 2:
         animal2 = input('Type an animal: ').strip()
     while len(number2) < 2:
-        number2 = int(input('Type a number: ').strip())  
+        number2 = input('Type a number: ').strip()
     while len(silly_word) < 2:
         silly_word = input('Type a silly word: ').strip()      
     while len(object2) < 2:
@@ -93,7 +93,7 @@ def madlib_2():
 
     # Checking user input
     while len(number) < 2:
-        num = input('Type a number: ').strip()
+        number = input('Type a number: ').strip()
     while len(measure_of_time) < 2:
         measure_of_time = input('Type a measure of time: ').strip()    
     while len(transportation_mode) < 2:
@@ -103,7 +103,7 @@ def madlib_2():
     while len(descriptive_word2) < 2:
         descriptive_word2 = input('Type an adjective: ').strip()  
     while len(object1) < 2:
-        noun1 = input('Type a noun: ').strip()
+        object1 = input('Type a noun: ').strip()
     while len(color) < 2:
         color = input('Type a color: ').strip()   
     while len(part_of_body) < 2:
