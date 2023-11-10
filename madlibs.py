@@ -135,6 +135,37 @@ def madlib_2():
     doctor came into my room and they were wearing a {object3} on their {part_of_body2}. I heard that all doctors {verb2} {object4} 
     everyday for breakfast. The most {descriptive_word3} thing about being in the hospital is the {silly_word} {object5}.'''
 
+def madlib_3():
+    """ Asks the user for input, validates the input and returns the string"""
+    #  User input variables
+    name = ""
+    number = ""
+    descriptive_word4 = ""
+    color3 = ""
+    object6 = ""
+    # has to be plural
+    food_type = ""
+    clothing_article = ""
+    descriptive_word5 = ""
+    celebrity = ""
+    number2 = ""
+    name2 = ""
+    occupation1 = ""
+    name3 = ""
+    
+
+    third_madlib = f'''
+    My name is {name} and I am {number} years old.
+    If I were president, I'd do a whole bunch {descriptive_word4}
+    things. I would drive the biggest {color3} car in the country.
+    That car would go faster than any other {object6} in the world.
+    Everyone would eat {food_type} for dinner. I would wear a {clothing_article}
+    on my head and everyone would say I look {descriptive_word5} like
+    {celebrity}. School would only be open {number2} years a day.
+    I would give my friends the best jobs. I would nominate {name2} to be
+    {occupation1} and {name3} could be vice {occupation1}. '''
+
+
    
 
 
