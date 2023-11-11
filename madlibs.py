@@ -53,30 +53,7 @@ def madlib():
     {measure_of_time}. If I see a {color2} {animal2} while hiking,
     I am going to bring it home as a pet!  At night we will tell 
     {number2}{silly_word}stories and roast {object2} around the fire'''
-
-def ValidateNumber():
-    while True:
-        user_input = input('Type a number:')
-        try:
-            number = int(user_input)
-            break
-        except ValueError:
-            print("Thats's not a valid number. Please try again.")
-
-def get_validated_input(maxStringLength, minStringLength, inputPrompt):
-    while True:
-        user_input = input(inputPrompt).strip()
-
-        if not (minStringLength < len(user_input) < maxStringLength):
-           print(f"Input length must be more than {minStringLength} and less than {maxStringLength} characters")
-
-
-        continue
-        if not all(char.isalnum() for char in user_input):
-            print("Input should not contain special characters.")
-            continue
-
-        return user_input.lower()           
+          
 def madlib_2():
     """ Asks the user for input, validates the input and returns the string"""
     # User input variables
