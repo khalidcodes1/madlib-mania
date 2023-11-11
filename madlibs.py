@@ -2,7 +2,7 @@ def madlib():
     """ Asks the user for input, validates the input and returns the string"""
     # User input variables
     name = ""
-    valid_name = False 
+    valid_name = False
     while valid_name is False:
         name = input('Please enter a name:')
         if get_validated_input(100, 2, name):
@@ -185,7 +185,7 @@ def madlib_2():
         else:
             get_validated_input(100, 2, object1)
     color = ""
-    valid_color = False 
+    valid_color = False
     while valid_color is False:
         color = input('Please enter a color:')
         if get_validated_input(100, 2, color):
@@ -291,47 +291,113 @@ def madlib_3():
     """ Asks the user for input, validates the input and returns the string"""
     #  User input variables
     name = ""
-    number = ""
+    valid_name = False
+    while valid_name is False:
+        name = input('Please enter a name:')
+        if get_validated_input(100, 2, name):
+            name.capitalize()
+            valid_name = True
+        else:
+            get_validated_input(100, 2, name)
+    number = validate_number()
     descriptive_word4 = ""
+    valid_descriptive_word4 = False
+    while valid_descriptive_word4 is False:
+            descriptive_word4 = input('Please enter an adjective:')
+        if get_validated_input(100, 2, descriptive_word4):
+            valid_descriptive_word4 = True
+        else:
+            get_validated_input(100, 2, descriptive_word4)
     color3 = ""
+     valid_color3 = False 
+    while valid_color3 is False:
+        color3 = input('Please enter a color:')
+        if get_validated_input(100, 2, color3):
+            valid_color3 = True
+        else:
+            get_validated_input(100, 2, color3)
     object6 = ""
+    valid_object6 = False
+    while valid_object6 is False:
+        object6 = input('Please enter a noun:')
+        if get_validated_input(100, 2, object6):
+            valid_object6 = True
+        else:
+            get_validated_input(100, 2, object6)
+ 
     # has to be plural
     food_type = ""
+    valid_food_type = False
+    while valid_food_type is False:
+            food_type = input('Please enter an adjective:')
+        if get_validated_input(100, 2, food_type):
+            valid_descriptive_word4 = True
+        else:
+            get_validated_input(100, 2, food_type)
     clothing_article = ""
+    valid_clothing_article = False
+    while valid_clothing_article is False:
+            clothing_article = input('Please enter a clothing article:')
+        if get_validated_input(100, 2, clothing_article):
+            valid_descriptive_word4 = True
+        else:
+            get_validated_input(100, 2, clothing_article)
     descriptive_word5 = ""
+    valid_descriptive_word5 = False
+    while valid_descriptive_word5 is False:
+            descriptive_word5 = input('Please enter an adjective:')
+        if get_validated_input(100, 2, descriptive_word5):
+            valid_descriptive_word5 = True
+        else:
+            get_validated_input(100, 2, descriptive_word5)
     celebrity = ""
-    number2 = ""
+    valid_celebrity = False
+    while valid_celebrity is False:
+            celebrity = input('Please enter a celebrity name:')
+        if get_validated_input(100, 2, celebrity):
+            valid_celebrity = True
+        else:
+            get_validated_input(100, 2, celebrity)
+    number2 = validate_number()
     name2 = ""
+    valid_name2 = False 
+    while valid_name2 is False:
+        name2 = input('Please enter a name:')
+        if get_validated_input(100, 2, name2):
+            name.capitalize()
+            valid_name = True
+        else:
+            get_validated_input(100, 2, name2)
     occupation1 = ""
+    valid_occupation1 = False
+    while valid_occupation1 is False:
+            occupation1 = input('Please enter an occupation:')
+        if get_validated_input(100, 2, occupation1):
+            valid_occupation1 = True
+        else:
+            get_validated_input(100, 2, occupation1)
     name3 = ""
-
-    # Checking user input
-    name = get_validated_input(maxStringLength=12, minStringLength=2, inputPrompt='Please enter a name:')
-    number = ValidateNumber()  
-    descriptive_word4 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter an adjective:')  
-    color3 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a color:')        
-    object6 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a noun:')  
-    food_type = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a food:')
-    clothing_article = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a clothing article:')   
-    descriptive_word5 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter an adjective:')     
-    celebrity = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a celebrity:')
-    number2 = ValidateNumber()
-    name2 = get_validated_input(maxStringLength=12, minStringLength=2, inputPrompt='Please enter a name:')
-    occupation1 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter an occupation:')
-    name3 = get_validated_input(maxStringLength=12, minStringLength=2, inputPrompt='Please enter a name:')
-
-
+    valid_name3 = False 
+    while valid_name3 is False:
+        name3 = input('Please enter a name:')
+        if get_validated_input(100, 2, name3):
+            name.capitalize()
+            valid_name3 = True
+        else:
+            get_validated_input(100, 2, name3)
 
     third_madlib = f'''
     My name is {name} and I am {number} years old.
     If I were president, I'd do a whole bunch {descriptive_word4}
     things. I would drive the biggest {color3} car in the country.
     That car would go faster than any other {object6} in the world.
-    Everyone would eat {food_type} for dinner. I would wear a {clothing_article}
-    on my head and everyone would say I look {descriptive_word5} like
-    {celebrity}. School would only be open {number2} years a day.
-    I would give my friends the best jobs. I would nominate {name2} to be
-    {occupation1} and {name3} could be vice {occupation1}. '''
+    Everyone would eat {food_type} for dinner. I would wear a 
+    {clothing_article} on my head and everyone would say I 
+    look {descriptive_word5} like {celebrity}. School would 
+    only be open {number2} years a day.I would give my 
+    friends the best jobs. I would nominate {name2} to be
+    {occupation1} and {name3} could be vice {occupation1}. 
+    '''
 
 
    
