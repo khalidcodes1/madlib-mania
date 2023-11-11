@@ -17,13 +17,19 @@ show_the_rules()
 def main():
     """ Main program function"""
     # Welcome message
-     # Shows welcoming message
+    # Shows welcoming message
     print(f'''Welcome to Madlib Mania!''')
     user_name = ""
     # Ask for user's name
-    while len(user_name) < 2:
-        user_name = input('Please enter your name: ')
-    print(f'''Hello, {user_name}, please pick an option from the menu''')
+    valid_user_name = False
+    while valid_user_name is False:
+        user_name = input('Please enter your name:')
+        if get_validated_input(100, 2, user_name):
+            valid_user_name = True
+        else:
+            get_validated_input(100, 2, user_name)
+
+    print(f'''Hello, {user_name.capitalize()}, please pick an option from the menu''')
     options = ['1.Instructions', '2.Start Game', '3.Quit']
     main_menu = TerminalMenu(options)
     sub_options = ['1.Story 1', '2.Story 2' , '3.Story 3', '4.Go Back']
