@@ -1,3 +1,5 @@
+from validation import *
+
 def madlib():
     """ Asks the user for input, validates the input and returns the string"""
     # User input variables
@@ -37,7 +39,7 @@ def madlib():
     descriptive_word2 = ""
     valid_descriptive_word2 = False 
     while valid_descriptive_word2 is False:
-            descriptive_word2 = input('Please enter an adjective:')
+        descriptive_word2 = input('Please enter an adjective:')
         if get_validated_input(100, 2, descriptive_word2):
             valid_descriptive_word2 = True
         else:
@@ -72,7 +74,7 @@ def madlib():
     while valid_verb3 is False:
         verb3 = input('Please enter a verb:')
         if get_validated_input(100, 2, verb3):
-            valid_verb = True
+            valid_verb3 = True
         else:
             get_validated_input(100, 2, verb3)
     # this adverb has to end in ly
@@ -103,7 +105,7 @@ def madlib():
             get_validated_input(100, 2, color2)
     animal2 = ""
     valid_animal2 = False 
-    while valid_animal is False:
+    while valid_animal2 is False:
         animal2 = input('Please enter an animal:')
         if get_validated_input(100, 2, animal2):
             valid_animal2 = True
@@ -129,7 +131,7 @@ def madlib():
 
     first_madlib = f'''
     This weekend I am going camping with {name}.
-    I packed my lantern, sleeping bag, and {object}.
+    I packed my lantern, sleeping bag, and {object1}.
     I am so {descriptive_word} to {verb} in a tent. 
     I am {descriptive_word2} we might see a {animal}, they are kind of 
     dangerous. We are going to hike, fish, and {verb2}. 
@@ -157,13 +159,13 @@ def madlib_2():
     while valid_transportation_mode is False:
         transportation_mode = input('Please enter a transportation mode:')
         if get_validated_input(100, 2, transportation_mode):
-            valid_measure_of_time = True
+            valid_transportation_mode = True
         else:
             get_validated_input(100, 2, transportation_mode)
     descriptive_word = ""
     valid_descriptive_word = False 
     while valid_descriptive_word is False:
-            descriptive_word = input('Please enter an adjective:')
+        descriptive_word = input('Please enter an adjective:')
         if get_validated_input(100, 2, descriptive_word):
             valid_descriptive_word = True
         else:
@@ -171,7 +173,7 @@ def madlib_2():
     descriptive_word2 = ""
     valid_descriptive_word2 = False
     while valid_descriptive_word2 is False:
-            descriptive_word2 = input('Please enter an adjective:')
+        descriptive_word2 = input('Please enter an adjective:')
         if get_validated_input(100, 2, descriptive_word2):
             valid_descriptive_word2 = True
         else:
@@ -252,7 +254,7 @@ def madlib_2():
     descriptive_word3 = ""
     valid_descriptive_word3 = False
     while valid_descriptive_word3 is False:
-            descriptive_word3 = input('Please enter an adjective:')
+        descriptive_word3 = input('Please enter an adjective:')
         if get_validated_input(100, 2, descriptive_word3):
             valid_descriptive_word3 = True
         else:
@@ -286,6 +288,7 @@ def madlib_2():
     {verb2} {object4} everyday for breakfast. The most {descriptive_word3} 
     thing about being in the hospital is the {silly_word} {object5}.
     '''
+    print(second_madlib)
 
 def madlib_3():
     """ Asks the user for input, validates the input and returns the string"""
@@ -303,13 +306,13 @@ def madlib_3():
     descriptive_word4 = ""
     valid_descriptive_word4 = False
     while valid_descriptive_word4 is False:
-            descriptive_word4 = input('Please enter an adjective:')
+        descriptive_word4 = input('Please enter an adjective:')
         if get_validated_input(100, 2, descriptive_word4):
             valid_descriptive_word4 = True
         else:
             get_validated_input(100, 2, descriptive_word4)
     color3 = ""
-     valid_color3 = False 
+    valid_color3 = False 
     while valid_color3 is False:
         color3 = input('Please enter a color:')
         if get_validated_input(100, 2, color3):
@@ -329,7 +332,7 @@ def madlib_3():
     food_type = ""
     valid_food_type = False
     while valid_food_type is False:
-            food_type = input('Please enter an adjective:')
+        food_type = input('Please enter an adjective:')
         if get_validated_input(100, 2, food_type):
             valid_descriptive_word4 = True
         else:
@@ -337,7 +340,7 @@ def madlib_3():
     clothing_article = ""
     valid_clothing_article = False
     while valid_clothing_article is False:
-            clothing_article = input('Please enter a clothing article:')
+        clothing_article = input('Please enter a clothing article:')
         if get_validated_input(100, 2, clothing_article):
             valid_descriptive_word4 = True
         else:
@@ -345,7 +348,7 @@ def madlib_3():
     descriptive_word5 = ""
     valid_descriptive_word5 = False
     while valid_descriptive_word5 is False:
-            descriptive_word5 = input('Please enter an adjective:')
+        descriptive_word5 = input('Please enter an adjective:')
         if get_validated_input(100, 2, descriptive_word5):
             valid_descriptive_word5 = True
         else:
@@ -353,7 +356,7 @@ def madlib_3():
     celebrity = ""
     valid_celebrity = False
     while valid_celebrity is False:
-            celebrity = input('Please enter a celebrity name:')
+        celebrity = input('Please enter a celebrity name:')
         if get_validated_input(100, 2, celebrity):
             valid_celebrity = True
         else:
@@ -371,7 +374,7 @@ def madlib_3():
     occupation1 = ""
     valid_occupation1 = False
     while valid_occupation1 is False:
-            occupation1 = input('Please enter an occupation:')
+        occupation1 = input('Please enter an occupation:')
         if get_validated_input(100, 2, occupation1):
             valid_occupation1 = True
         else:
@@ -398,6 +401,7 @@ def madlib_3():
     friends the best jobs. I would nominate {name2} to be
     {occupation1} and {name3} could be vice {occupation1}. 
     '''
+    print(third_madlib)
 
 
    

@@ -3,12 +3,12 @@ def validate_number():
         user_input = input('Type a number:')
         try:
             number = int(user_input)
-            break
+            return number
         except ValueError:
             print("Thats's not a valid number. Please try again.")
 
 def get_validated_input(max_str_length, min_str_length, inputPrompt):
-    user.input = inputPrompt.strip()
+    user_input = inputPrompt.strip()
     if len(user_input) < min_str_length or len(user_input) > max_str_length:
         print(
             f'''
