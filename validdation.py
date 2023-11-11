@@ -1,4 +1,4 @@
-def ValidateNumber():
+def validate_number():
     while True:
         user_input = input('Type a number:')
         try:

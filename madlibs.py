@@ -2,46 +2,132 @@ def madlib():
     """ Asks the user for input, validates the input and returns the string"""
     # User input variables
     name = ""
+    valid_name = False 
+    while valid_name is False:
+        name = input('Please enter a name:')
+        if get_validated_input(100, 2, name):
+            name.capitalize()
+            valid_name = True
+        else:
+            get_validated_input(100, 2, name)
     object1 = ""
+    valid_object1 = False 
+    while valid_object1 is False:
+        object1 = input('Please enter a noun:')
+        if get_validated_input(100, 2, object1):
+            valid_object1 = True
+        else:
+            get_validated_input(100, 2, object1)
     descriptive_word = ""
+    valid_descriptive_word = False 
+    while valid_descriptive_word is False:
+        descriptive_word = input('Please enter an adjective:')
+        if get_validated_input(100, 2, descriptive_word):
+            valid_descriptive_word = True
+        else:
+            get_validated_input(100, 2, descriptive_word)
     verb = ""
+    valid_verb = False 
+    while valid_verb is False:
+        verb = input('Please enter a verb:')
+        if get_validated_input(100, 2, verb):
+            valid_verb = True
+        else:
+            get_validated_input(100, 2, verb)
     descriptive_word2 = ""
+    valid_descriptive_word2 = False 
+    while valid_descriptive_word2 is False:
+            descriptive_word2 = input('Please enter an adjective:')
+        if get_validated_input(100, 2, descriptive_word2):
+            valid_descriptive_word2 = True
+        else:
+            get_validated_input(100, 2, descriptive_word2) 
     animal = ""
+    valid_animal = False 
+    while valid_animal is False:
+        animal = input('Please enter an animal:')
+        if get_validated_input(100, 2, animal):
+            valid_animal = True
+        else:
+            get_validated_input(100, 2, animal)
     verb2 = ""
+    valid_verb2 = False 
+    while valid_verb2 is False:
+        verb2 = input('Please enter a verb:')
+        if get_validated_input(100, 2, verb2):
+            valid_verb2 = True
+        else:
+            get_validated_input(100, 2, verb2)
     color = ""
+    valid_color = False 
+    while valid_color is False:
+        color = input('Please enter a color:')
+        if get_validated_input(100, 2, color):
+            valid_color = True
+        else:
+            get_validated_input(100, 2, color)
     # make this verb end in ing
     verb3 = ""
+    valid_verb3 = False 
+    while valid_verb3 is False:
+        verb3 = input('Please enter a verb:')
+        if get_validated_input(100, 2, verb3):
+            valid_verb = True
+        else:
+            get_validated_input(100, 2, verb3)
     # this adverb has to end in ly
     adverb = ""
-    number = ""
+    valid_adverb = False 
+    while valid_adverb is False:
+        adverb = input('Please enter an adverb (ending in ly):')
+        if get_validated_input(100, 2, adverb):
+            valid_adverb = True
+        else:
+            get_validated_input(100, 2, adverb)
+    number = validate_number()
     measure_of_time = ""
+    valid_measure_of_time = False 
+    while valid_measure_of_time is False:
+        measure_of_time = input('Please enter a measure of time:')
+        if get_validated_input(100, 2, measure_of_time):
+            valid_measure_of_time = True
+        else:
+            get_validated_input(100, 2, measure_of_time)
+            
     color2 = ""
+    valid_color2 = False 
+    while valid_color2 is False:
+        color2 = input('Please enter a color:')
+        if get_validated_input(100, 2, color2):
+            valid_color2 = True
+        else:
+            get_validated_input(100, 2, color2)
     animal2 = ""
-    number2 = ""
+    valid_animal2 = False 
+    while valid_animal is False:
+        animal2 = input('Please enter an animal:')
+        if get_validated_input(100, 2, animal2):
+            valid_animal2 = True
+        else:
+            get_validated_input(100, 2, animal2)
+    number2 = validate_number()
     silly_word = ""
+    valid_silly_word = False 
+    while valid_silly_word is False:
+        silly_word = input('Please enter a silly word:')
+        if get_validated_input(100, 2, silly_word):
+            valid_silly_word = True
+        else:
+            get_validated_input(100, 2, silly_word)
     object2 = ""
+    valid_object2 = False 
+    while valid_object2 is False:
+        object2 = input('Please enter a noun:')
+        if get_validated_input(100, 2, object2):
+            valid_object2 = True
+        else:
+            get_validated_input(100, 2, object2)
 
-    # Checking user input
-    name = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a name:')
-    object1 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a noun:')
-    descriptive_word = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a noun:')
-    verb = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a verb:')
-    descriptive_word2 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a noun:')
-    animal = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter an animal:')    
-    verb2 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a verb:')
-    color = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a color:')     
-    verb3 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a verb:')     
-    adverb = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a verb:')
-    number = ValidateNumber()
-    measure_of_time = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a measure of time:') 
-    color2 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a color:')  
-    animal2 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter an animal:')
-    number2 = ValidateNumber()
-    silly_word = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a silly word:')     
-    object2 = get_validated_input(maxStringLength=12, minStringLength=3, inputPrompt='Please enter a noun:')
- 
-
-                  
     first_madlib = f'''
     This weekend I am going camping with {name}.
     I packed my lantern, sleeping bag, and {object}.
@@ -53,6 +139,7 @@ def madlib():
     {measure_of_time}. If I see a {color2} {animal2} while hiking,
     I am going to bring it home as a pet!  At night we will tell 
     {number2}{silly_word}stories and roast {object2} around the fire'''
+    print(first_madlib)
           
 def madlib_2():
     """ Asks the user for input, validates the input and returns the string"""
