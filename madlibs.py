@@ -332,9 +332,9 @@ def madlib_3():
     food_type = ""
     valid_food_type = False
     while valid_food_type is False:
-        food_type = input('Please enter an adjective:')
+        food_type = input('Please enter a food type:')
         if get_validated_input(100, 2, food_type):
-            valid_descriptive_word4 = True
+            valid_food_type = True
         else:
             get_validated_input(100, 2, food_type)
     clothing_article = ""
@@ -342,7 +342,7 @@ def madlib_3():
     while valid_clothing_article is False:
         clothing_article = input('Please enter a clothing article:')
         if get_validated_input(100, 2, clothing_article):
-            valid_descriptive_word4 = True
+            valid_clothing_article = True
         else:
             get_validated_input(100, 2, clothing_article)
     descriptive_word5 = ""
