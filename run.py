@@ -35,7 +35,7 @@ def main():
     please pick an option from the menu''')
     options = ['1.Instructions', '2.Start Game', '3.Quit']
     main_menu = TerminalMenu(options)
-    sub_options = ['1.Story 1', '2.Story 2 ,'3.Story 3', '4.Go Back']
+    sub_options = ['1.Story 1', '2.Story 2', '3.Story 3', '4.Go Back']
     sub_menu = TerminalMenu(sub_options)
     quitting = False
     while quitting is not True:
