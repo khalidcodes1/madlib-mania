@@ -15,6 +15,7 @@ def show_the_rules():
 
 show_the_rules()
 
+
 def main():
     """ Main program function"""
     # Welcome message
@@ -30,12 +31,13 @@ def main():
         else:
             get_validated_input(100, 2, user_name)
 
-    print(f'''Hello, {user_name.capitalize()}, please pick an option from the menu''')
+    print(f'''Hello, {user_name.capitalize()},
+    please pick an option from the menu''')
     options = ['1.Instructions', '2.Start Game', '3.Quit']
     main_menu = TerminalMenu(options)
-    sub_options = ['1.Story 1', '2.Story 2' , '3.Story 3', '4.Go Back']
+    sub_options = ['1.Story 1', '2.Story 2 ,'3.Story 3', '4.Go Back']
     sub_menu = TerminalMenu(sub_options)
-    quitting = False 
+    quitting = False
     while quitting is not True:
         menu_index = main_menu.show()
         options_choice = options[menu_index]
@@ -54,7 +56,7 @@ def main():
                 madlib()
                 print(end_message)
             elif sub_options_choice == '2.Story 2':
-                print(ready_message) 
+                print(ready_message)
                 madlib_2()
                 print(end_message)
             elif sub_options_choice == '3.Story 3':
@@ -62,12 +64,7 @@ def main():
                 madlib_3()
                 print(end_message)
             else:
-                menu_index = main_menu.show()    
-
-        
-
-main()            
+                menu_index = main_menu.show()
 
 
-
-    
+main()
