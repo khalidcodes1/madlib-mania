@@ -36,7 +36,7 @@ Users can quickly learn the rules of the game and type any words according to th
   The user can see a welcoming message which engages to start playing and the 
   prompt to enter their name:
   
-  ![loading Program](documentation/features/welcome_message.png)
+  ![loading Program](documentation/welcome_message.png)
 
   - **When the user types a name.**
 
@@ -44,13 +44,13 @@ Users can quickly learn the rules of the game and type any words according to th
 
   - Shows the terminal menu with three options:
 
-    1. Instructions;
+    - Instructions;
 
-    1. Start Game;
+    - Start Game;
 
-    1. Quit;
+    - Quit;
 
-      ![loading Program](documentation/features/main_menu.png)
-      
+      ![loading Program](documentation/main_menu.png)
+
 
 
