@@ -75,7 +75,7 @@ Users can quickly learn the rules of the game and type any words according to th
 
   Here the user chooses which story they want to play with.
 
-- **When the user chose a particular story**
+- **When the user chooses a particular story**
 
   The program alerts the user to be ready to type the words.
 
@@ -84,12 +84,19 @@ Users can quickly learn the rules of the game and type any words according to th
   Then, the user will be asked to type words according to the parts of speech. 
   When all words are typed, the user will receive the whole story based on the keywords which he or she typed before.
 
-    - **When the user chose "Quit"**
+    - **When the user chooses "Go Back"**
 
 
-  The user will see a goodbye message, and the program will be stopped.
+  The user will be taken back to the main menu
 
+  ![loading Program](documentation/main_menu.png)
+
+  - **When the user chooses "Quit" on the main menu**
+    The user will see a goodbye message, and the program will be stopped.
+    
   ![loading Program](documentation/exit_message.png)
+
+
 
 
 
