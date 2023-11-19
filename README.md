@@ -96,6 +96,17 @@ Users can quickly learn the rules of the game and type any words according to th
     
   ![loading Program](documentation/exit_message.png)
 
+## Flowchart
+
+The flowchart represents the logic of the application:
+
+  ![Flash Card Page](documentation/logic.png)
+
+## Technologies Used
+
+### Languages:
+
+- [Python 3.8.5](https://www.python.org/downloads/release/python-385/): used to anchor the project and direct all application behavior
 
 
 
