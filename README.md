@@ -84,5 +84,12 @@ Users can quickly learn the rules of the game and type any words according to th
   Then, the user will be asked to type words according to the parts of speech. 
   When all words are typed, the user will receive the whole story based on the keywords which he or she typed before.
 
+    - **When the user chose "Quit"**
+
+
+  The user will see a goodbye message, and the program will be stopped.
+
+  ![loading Program](documentation/exit_message.png)
+
 
 
