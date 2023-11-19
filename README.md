@@ -52,5 +52,26 @@ Users can quickly learn the rules of the game and type any words according to th
 
       ![loading Program](documentation/main_menu.png)
 
+ The user can manipulate the terminal menu with the arrow keys to choose an option and the enter key to confirm the choice.
+
+  - **When the user chose "Instructions"**
+
+  The user will see the main rules of the game which are required to be followed.
+
+  - **When the user chose "Start Game"**
+
+  The program will show the sub-menu with the following options to choose from:
+
+  - Story 1
+
+  - Story 2
+
+  - Story 3
+
+  - Go Back
+
+
+  ![loading Program](documentation/sub_menu.png)      
+
 
 
