@@ -71,7 +71,18 @@ Users can quickly learn the rules of the game and type any words according to th
   - Go Back
 
 
-  ![loading Program](documentation/sub_menu.png)      
+  ![loading Program](documentation/sub_menu.png)
+
+  Here the user chooses which story they want to play with.
+
+- **When the user chose a particular story**
+
+  The program alerts the user to be ready to type the words.
+
+  ![loading Program](documentation/flow.png)
+
+  Then, the user will be asked to type words according to the parts of speech. 
+  When all words are typed, the user will receive the whole story based on the keywords which he or she typed before.
 
 
 
