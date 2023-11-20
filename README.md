@@ -139,7 +139,22 @@ The flowchart represents the logic of the application:
 The program was tested constantly during its development process to ensure user inputs made sense:
 
 ![String Validation](documentation/string_validation.png)
+
 ![Number Validation](documentation/number_validation.png)
+
+### Validators
+
+Code Institutes [online validation tool](https://pep8ci.herokuapp.com/) was used to ensure that all of the project's Python source code is [Pep 8-compliant](https://legacy.python.org/dev/peps/pep-0008/). This checking was done manually by copying python code and pasting it into the validator.
+
+No errors were found:
+![run.py](documentation/python_linter_runpy.png)
+
+![madlibs.py](documentation/python_linter_madlibs.png)
+
+![validation.py](documentation/python_linter_validation.png)
+
+
+
 
 
 
