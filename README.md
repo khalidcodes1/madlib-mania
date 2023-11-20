@@ -108,6 +108,42 @@ The flowchart represents the logic of the application:
 
 - [Python 3.8.5](https://www.python.org/downloads/release/python-385/): used to anchor the project and direct all application behavior
 
+### Frameworks/Libraries, Programmes and Tools:
+#### Python modules/packages:
+
+##### Third-party imports:
+
+- [Simple Terminal Menu](https://pypi.org/project/simple-term-menu/) was used to implement the menu.
+
+#### Other tools:
+
+- [Git](https://git-scm.com/) was used for the version control of the website.
+- [GitHub](https://github.com/) was used to host the code of the website.
+
+## Bugs
+
++ **Solved bugs**
+
+
+1. The functions ```madlib```, ```madlib_2``` and ```madlib_3``` were not printing out the completed stories after the user input all the inputs.
+
+    - *Solutions:* I was not calling the print function on the variables that held the stories.
+
+    
++ **Unsolved bugs**
+
+    - None.
+
+    ## Testing
+
+The program was tested constantly during its development process to ensure user inputs made sense:
+
+![String Validation](documentation/string_validation.png)
+![Number Validation](documentation/number_validation.png)
+
+
+
+
 
 
 
