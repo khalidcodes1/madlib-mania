@@ -159,43 +159,52 @@ No errors were found:
 
 ### To deploy the project to Heroku so it can be run as a remote web application:
 - Clone the repository:
-  1. Open a folder on your computer with the terminal.
-  1. Run the following command
+  - Open a folder on your computer with the terminal.
+  - Run the following command
   - `git clone https://github.com/khalidcodes1/madlib-mania.git`
 
-  1. Create your own GitHub repository to host the code.
-  1. Run the command `git remote set-url origin <Your GitHub Repo Path>` to set the remote repository location to your repository.
+  - Create your own GitHub repository to host the code.
+  - Run the command `git remote set-url origin <Your GitHub Repo Path>` to set the remote repository location to your repository.
 
-  1. Push the files to your repository with the following command:
+  - Push the files to your repository with the following command:
   `git push`
-  1. Create a Heroku account if you don't already have one here [Heroku](https://dashboard.heroku.com).
-  1. Create a new Heroku application on the following page here [New Heroku App](https://dashboard.heroku.com/apps):
+  - Create a Heroku account if you don't already have one here [Heroku](https://dashboard.heroku.com).
+  - Create a new Heroku application on the following page here [New Heroku App](https://dashboard.heroku.com/apps):
 
-  1. Go to the Deploy tab:
+  - Go to the Deploy tab:
 
-  1. Link your GitHub account and connect the application to the repository you created.
+  - Link your GitHub account and connect the application to the repository you created.
 
-  1. Go to the Settings tab:
+  - Go to the Settings tab:
 
-  1. Click "Add buildpack":
+  - Click "Add buildpack":
 
-  1. Add the Python and Node.js buildpacks in that order:
+  - Add the Python and Node.js buildpacks in that order:
 
-  1. Click "Reveal Config Vars."
+  - Click "Reveal Config Vars."
 
-  1. Add 1 new Config Vars:
+  - Add 1 new Config Vars:
       - Key: PORT Value: 8000
       - *This Config was provided by [CODE INSTITUTE](https://codeinstitute.net/)*.
 
-  1. Go back to the Deploy tab:
+  - Go back to the Deploy tab:
 
-      - ![Deploy Tab](documentation/deployment/deploy_tab.png)
-
-  1. Click "Deploy Branch":
+  - Click "Deploy Branch":
 
       - Wait for the completion of the deployment.
 
-  1. Click "Open app" to launch the application inside a web page.
+  - Click "Open app" to launch the application inside a web page.
+
+  ## Acknowledgements
+
+[Iuliia Konovalova](https://github.com/IuliiaKonovalova)
+
+I am tremendously thankful to my mentor Iuliia Konovalova for her guidance and valuable feedback!
+
+
+
+
+
 
 
 
